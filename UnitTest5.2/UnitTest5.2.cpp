@@ -9,20 +9,11 @@ namespace UnitTest52
 	TEST_CLASS(UnitTest52)
 	{
 	public:
-		
 		TEST_METHOD(TestMethod1)
 		{
 			double t;
-			int a = 3;
-			t = S(1, 2, a, 4);
-
-			Assert::AreEqual(t, 2, 3, 4);
-		}
-		TEST_METHOD(TestMethod2)
-		{
-			double t;
-			t = A(1, 2, 3);
-			Assert::AreEqual(1, t, 3);
+			t = A(1, 2, 5);
+			Assert::AreEqual(t, -3*1.);
 		}
 	};
 }
